@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @order.index %>
+</p>
+
+<p>
+  <strong>Show:</strong>
+  <%= @order.show %>
+</p>
+
+<p><%= link_to "Print in PDF", order_path(@order, format: "pdf") %></p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
